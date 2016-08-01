@@ -25,10 +25,14 @@ angular.module('Demo').controller('googleCtrl', function($scope, $filter){
     calendar_id: 'metob64ta0qoqd7fve8714mrk0@group.calendar.google.com'
   };
 
-
   $scope.rocket_royale = {
     google_key: rl_google_key,
     calendar_id: '8jp8agi1pbljjaj4qnns3m4i0c@group.calendar.google.com'
+  };
+
+  $scope.rlcs = {
+    google_key: rl_google_key,
+    calendar_id: 'ldd0c499r50jljq19kjerkc628@group.calendar.google.com'
   };
 
   $scope.calendars = function() {
