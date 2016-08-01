@@ -86,8 +86,16 @@ angular.module('GoogleCalendar', []).directive('googleCalendar', function(){
         if (!$scope.gcConfig.hideTitle && !$scope.gcConfig.calendar_name)
           angular.extend($scope.gcConfig, { calendar_name: data.summary })
 
+        angular.forEach($scope.calendar.items, function(item) {
+          item.startTime = $scope.start(item);
+          item.endTime =  $scope.end(item);
+          if (item.start.date) {
+            item.startDate = new Date(item.start.date);
+          } else {
+            item.startDate = new Date(item.start.dateTime);
+          };
+        });
         $scope.$parent.all_calendars.push($scope.calendar.items);
-
       });
     }
     ]

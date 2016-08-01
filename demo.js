@@ -26,7 +26,6 @@ angular.module('Demo').controller('googleCtrl', function($scope, $filter){
   };
 
 
-
   $scope.rocket_royale = {
     google_key: rl_google_key,
     calendar_id: '8jp8agi1pbljjaj4qnns3m4i0c@group.calendar.google.com'
@@ -36,29 +35,6 @@ angular.module('Demo').controller('googleCtrl', function($scope, $filter){
     var merged = [].concat.apply([], $scope.all_calendars);
     //$filter('orderBy')(merged, 'start.startTime');
     return merged;
-  }
-
-  $scope.start = function(event){
-    if (event.start.date) {
-      return fulldayFilter(event.start.date);
-    } else if (event.start.dateTime) {
-      return timedFilter(event.start.dateTime);
-    };
-  };
-
-  $scope.end = function(event){
-    /**
-     * The end date is off by one in google for entire day events
-     * so we need to substract one day
-     */
-    if (event.end.date) {
-      var d = new Date(event.end.date);
-      d.setDate(d.getDate() - 1);
-      return fulldayFilter(d);
-    } else if (event.end.dateTime) {
-      return timedFilter(event.end.dateTime);
-    };
-
   };
 
 });
