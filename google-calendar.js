@@ -52,7 +52,9 @@ angular.module('GoogleCalendar', []).directive('googleCalendar', function(){
         };
       };
 
-      var url = "https://www.googleapis.com/calendar/v3/calendars/" + $scope.gcConfig.calendar_id + "/events?orderBy=startTime&singleEvents=true&timeMin=" + (new Date().toISOString()) + "&maxResults=" + $scope.gcConfig.max + "&key=" + $scope.gcConfig.google_key;
+      var today = new Date();
+      today.setHours(0,0,0,0);
+      var url = "https://www.googleapis.com/calendar/v3/calendars/" + $scope.gcConfig.calendar_id + "/events?orderBy=startTime&singleEvents=true&timeMin=" + (today.toISOString()) + "&maxResults=" + $scope.gcConfig.max + "&key=" + $scope.gcConfig.google_key;
 
       $http.get(url).success(function(data){
         $scope.calendar = data;
