@@ -9,7 +9,7 @@
 <div class="panel-body" data-ng-repeat="event in calendar.items">
   <div class="event-title">{{ ::event.summary }}</div>
   <div class="datetime">
-    {{ event.startTime }} - {{ event.endTime }}
+    {{ event.startTime }}
   </div>
   <div class="description" data-ng-if="gcConfig.htmlDesc" data-ng-bind-html="event.description"></div>
   <div class="description" data-ng-if="!gcConfig.htmlDesc">{{ event.description }}</div>
