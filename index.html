@@ -58,7 +58,7 @@
           <div class="list-group-item" data-ng-repeat="event in calendars() | orderBy: 'startDate'">
             <div class="event-title"> {{ event.organizer.displayName }} => {{ event.summary }}</div>
             <div class="datetime">
-              {{ event.startTime }} - {{ event.endTime }}
+              {{ event.startTime }}
             </div>
             <div class="description" data-ng-bind-html="event.description"></div>
           </div>
