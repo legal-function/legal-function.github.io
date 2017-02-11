@@ -17,7 +17,7 @@ angular.module('Demo').controller('googleCtrl', function($scope, $filter){
 
   $scope.ptp = {
     google_key: rl_google_key,
-    calendar_id: ' k408le6f3id7pibsbd1tb1qkls@group.calendar.google.com'
+    calendar_id: 'k408le6f3id7pibsbd1tb1qkls@group.calendar.google.com'
   };
   
   $scope.prl = {
