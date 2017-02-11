@@ -1,5 +1,12 @@
 angular.module('Demo', ['ngSanitize','GoogleCalendar']);
 
+angular.module('Demo').config([
+  '$compileProvider',
+  function( $compileProvider ) {
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|webcal):/);
+  }
+]);
+
 angular.module('Demo').controller('googleCtrl', function($scope, $filter){
   rl_google_key = 'AIzaSyB0ZQbtnxFW7P_xLWACEAHYd5DKHSSncQ4'
 
