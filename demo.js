@@ -31,21 +31,16 @@ angular.module('Demo').controller('googleCtrl', function($scope, $filter){
     google_key: rl_google_key,
     calendar_id: 'kbve9gjj4l5qchs7mtcrp7jg8c%40group.calendar.google.com'
   };
-  
-  $scope.prl_old = {
-    google_key: rl_google_key,
-    calendar_id: 'g2kh9i3g0v95hd4121f1ns5mas@group.calendar.google.com'
-  };
 
-  $scope.pulsar = {
-    google_key: rl_google_key,
-    calendar_id: 'metob64ta0qoqd7fve8714mrk0@group.calendar.google.com'
-  };
+  //$scope.pulsar = {
+  //  google_key: rl_google_key,
+  //  calendar_id: 'metob64ta0qoqd7fve8714mrk0@group.calendar.google.com'
+  //};
 
-  $scope.rocket_royale = {
-    google_key: rl_google_key,
-    calendar_id: '8jp8agi1pbljjaj4qnns3m4i0c@group.calendar.google.com'
-  };
+  //$scope.rocket_royale = {
+  //  google_key: rl_google_key,
+  //  calendar_id: '8jp8agi1pbljjaj4qnns3m4i0c@group.calendar.google.com'
+  //};
 
   $scope.rlcs = {
     google_key: rl_google_key,
