@@ -22,6 +22,11 @@ angular.module('Demo').controller('googleCtrl', function($scope, $filter){
   
   $scope.prl = {
     google_key: rl_google_key,
+    calendar_id: 'kbve9gjj4l5qchs7mtcrp7jg8c%40group.calendar.google.com'
+  };
+  
+  $scope.prl_old = {
+    google_key: rl_google_key,
     calendar_id: 'g2kh9i3g0v95hd4121f1ns5mas@group.calendar.google.com'
   };
 
