@@ -12,25 +12,25 @@ angular.module('Demo').controller('googleCtrl', function($scope, $filter){
 
   $scope.all_calendars = [];
 
-  $scope.gfinity = {
-    google_key: rl_google_key,
-    calendar_id: '5gmq2097f1r5i2p2b09n6t2280@group.calendar.google.com'
-  };
+  //$scope.gfinity = {
+  //  google_key: rl_google_key,
+  //  calendar_id: '5gmq2097f1r5i2p2b09n6t2280@group.calendar.google.com'
+  //};
 
-  $scope.misc = {
-    google_key: rl_google_key,
-    calendar_id: 'bjq4vsjh35qavh79n3im2qchmg@group.calendar.google.com'
-  };
+  //$scope.misc = {
+  //  google_key: rl_google_key,
+  //  calendar_id: 'bjq4vsjh35qavh79n3im2qchmg@group.calendar.google.com'
+  //};
 
   $scope.ptp = {
     google_key: rl_google_key,
     calendar_id: 'k408le6f3id7pibsbd1tb1qkls@group.calendar.google.com'
   };
   
-  $scope.prl = {
-    google_key: rl_google_key,
-    calendar_id: 'kbve9gjj4l5qchs7mtcrp7jg8c%40group.calendar.google.com'
-  };
+  //$scope.prl = {
+  //  google_key: rl_google_key,
+  //  calendar_id: 'kbve9gjj4l5qchs7mtcrp7jg8c%40group.calendar.google.com'
+  //};
 
   //$scope.pulsar = {
   //  google_key: rl_google_key,
